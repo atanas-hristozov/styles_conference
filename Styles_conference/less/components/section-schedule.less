@@ -1,0 +1,83 @@
+@import 'var.less';
+
+.schedule{
+    padding: 66px 0 44px 0;
+    margin: 0 20px;
+    display: block;
+    color: @color-darker-grey;
+    border-collapse: collapse;
+    border-spacing: 0;
+    @media only screen and (min-width: @desktop){
+        margin: 0 auto;
+        max-width: 960px;
+    }
+    tbody{
+        
+        tr{
+            td{
+                border-top: 1px solid #dfe2e5;
+            }
+            
+            
+        }
+    }
+
+    &-heading{
+        padding-right: 45px;
+        text-align: right;
+        width: 20%;
+        font-size: 24px;
+        font-family: "Lato";
+        font-weight: 500;
+        color: @color-olive-green;
+        padding-bottom: 22px;
+        align-items: center;
+    }
+    &-data{
+        color: @color-silver;
+        font-family: "Lato";
+        font-weight: 500;
+        width: 40%;
+        padding-bottom: 22px;
+        align-items: center;
+    }
+    &-hours{
+        color: #a9b2b9;
+        font-size: 14px;
+        font-family: "Lato";
+        font-weight: 400;
+        padding-top: 22px;
+        text-transform: uppercase;
+        padding-right: 45px;
+        text-align: right;
+        width: 20%;
+        padding-bottom: 22px;
+        align-items: center;
+    }
+    &-events{
+        color: #a9b2b9;
+        font-family: "Lato";
+        padding: 21px 0 22px 0;
+        width: 40%;
+        align-items: center;
+    }
+    &-workshops{
+            padding: 21px 30px 22px 0;
+            width: 40%;
+            align-items: center;
+        a{
+            h4{
+                font-size: 24px;
+                font-family: "Lato";
+                font-weight: 500;
+                color: @color-olive-green; 
+                margin: 0; 
+            }
+            p{
+                color: #a9b2b9;
+                font-family: "Lato";
+            }
+        }
+        
+    }
+}

@@ -1,0 +1,53 @@
+@import 'var.less';
+
+.location{
+    display: flex;
+    flex-direction: column;
+    margin: 0 15px;
+    text-align: center;
+    @media only screen and (min-width: @desktop){
+        max-width: 960px;
+        flex-direction: row;
+        margin: 50px auto;
+        text-align: left;
+    }
+    &-info{
+            
+            font-family: "Lato"; 
+            @media only screen and (min-width: @desktop){
+                width: 30%;
+            }
+        h3{
+            font-size: 24px;
+            line-height: 44px;
+            color: @color-olive-green;
+            font-weight: 500;
+            margin-bottom: 5px;
+        }
+        article{
+            margin-bottom: 22px;
+        }
+        p{
+            color: @color-darker-grey;
+            font-size: 16px;
+            margin: 0;
+        }
+        a{
+            color: @color-olive-green;
+        }
+    }
+    &-map{
+        height: 264px;
+        display: inline-block;
+        margin-bottom: 50px;
+        border: none;
+        @media only screen and (min-width: @mobile){
+            margin: 0 auto 50px auto;
+            width: 60%;
+        }
+        @media only screen and (min-width: @desktop){
+            width: 100%;
+            padding: 20px;
+        }
+    }
+}

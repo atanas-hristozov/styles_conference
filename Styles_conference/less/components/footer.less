@@ -1,0 +1,57 @@
+@import 'var.less';
+
+.footer{
+    background-color: @color-dark-green;
+    &-bar{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        padding: 44px 30px;
+    
+        @media only screen and (min-width:@desktop){
+            flex-direction: row;
+            align-items: center;
+            max-width: 960px;
+        }
+    
+        &-links{
+            margin: 0 auto;
+            @media only screen and (min-width:@desktop){
+                margin: 0 0 0 auto;
+            }
+        }
+        h5{
+            text-align: center;
+            margin: 0;
+            color: @color-olive-green;
+            font-size: 20px;
+            //font-size: 14px;
+            font-family: "Lato";
+            font-weight: 500;
+        }
+        a{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            margin-top: 10px;
+            color: white;
+            font-size: 20px;
+            //font-size: 14px;
+            font-family: "Lato";
+            font-weight: 400;
+            padding: 10px;
+    
+            @media only screen and (min-width:@mobile){
+                display: inline-block;
+            }
+            @media only screen and (min-width:@desktop){
+                display: inline-block;
+                text-align: left;
+                font-size: 14px;
+                margin-top: 0;
+            }
+        }
+        
+        
+    }
+}

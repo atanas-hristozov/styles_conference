@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="public/css/main.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Home</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header-event">
+            <a href="intex.html" class="header-event-logo">Styles Conference</a>
+            <div class="header-event-desc">
+                <h2 class="header-event-desc-title">August 24–26th — Chicago, IL</h2>
+                <nav class="header-event-desc-nav">
+                    <div class="header-event-desc-nav-topnav" id="myTopnav">
+                        <a href="index.html" class="header-event-desc-nav-topnav-active">Home</a>
+                        <a href="Speakers.html">Speakers</a>
+                        <a href="Schedule.html">Schedule</a>
+                        <a href="Venue.html">Venue</a>
+                        <a href="Register.html">Register</a>
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                        </a>
+                    </div>
+                
+                    <script>
+                        function myFunction() {
+                        var x = document.getElementById("myTopnav");
+                        if (x.className === "header-event-desc-nav-topnav") {
+                            x.className += " responsive";
+                        } else {
+                            x.className = "header-event-desc-nav-topnav";
+                        }
+                        }
+                    </script>
+                </nav>
+            </div>
+        </div> 
+    </header>
+    <section class="event">
+        <div class="event-header">
+            <h3 class="event-header-heading">Dedicated to the Craft of Building Websites</h3>
+            <p>Every year the brightest web designers and front-end developers descend on Chicago to discuss the latest tech logies. Join us this August!</p>
+            <a href="">Register</a>
+        </div>
+    </section>
+    <section class="scheme">
+        <div class="scheme-item">
+            <h3>Speakers</h3>
+            <a href="Speakers.html">
+            <img src="img/speakers.jpg"/>
+            <h4>World-Class Speakers</h4>
+            </a>
+            <p>Joining us from all around the world are over twenty fantastic speakers, here to share their stories.</p>
+        </div>
+        <div class="scheme-item">
+            <h3>SCHEDULE</h3>
+            <a href="Schedule.html">
+            <img src="img/schedule.jpg"/>
+            <h4>Three Inspiring Days</h4>
+            </a>
+            <p>Enjoy three inspiring and action-packed days of tals, gatherings, and all-around good times.</p>
+        </div>
+        <div class="scheme-item">
+            <h3>VENUE</h3>
+            <a href="Venue.html">
+            <img src="img/venue.jpg"/>
+            <h4>The Chicago Theatre</h4>
+            </a>
+            <p>Within the heart of downtown Chicago, The Chicago Theatre will provide a beautiful conference venue.</p>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-bar">
+            <h5 class="footer-bar-name">© Styles Conference</h5>
+            <nav class="footer-bar-links">
+                <a href="index.html">Home</a>
+                <a href="Speakers.html">Speakers</a>
+                <a href="Schedule.html">Schedule</a>
+                <a href="Venue.html">Venue</a>
+                <a href="Register.html">Register</a>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>

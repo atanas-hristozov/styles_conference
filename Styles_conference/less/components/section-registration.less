@@ -1,0 +1,104 @@
+@import 'var.less';
+
+.registration{
+    display: flex;
+    flex-direction: column;
+    padding: 50px 20px 0 20px;
+    margin: 0 auto;
+    text-align: center;
+    @media only screen and (min-width: @desktop){
+        text-align: left;
+        flex-direction: row;
+        max-width: 960px;
+    }
+    &-info{
+        font-family: "Lato";
+        @media only screen and (min-width: @desktop){
+            width: 66.66%;
+        }
+        h3{
+            font-size: 24px;
+            color: @color-olive-green;
+            font-weight: 400;
+        }
+        &-price{
+            color: @color-silver;
+            font-size: 14px;
+            font-weight: 400;
+            text-transform: uppercase;
+            margin-bottom: 22px;
+        }
+        &-description{
+            color: @color-darker-grey;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 22px;
+            margin-bottom: 22px;
+        }
+        h4{
+            font-size: 18px;
+            color: @color-olive-green;
+            font-weight: 400;
+        }
+        ul{
+            list-style: square;
+            margin: 0 0 22px 30px;
+            padding: 0;
+            li{
+                color: @color-darker-grey;
+                font-size: 16px;
+                font-weight: 400;
+                text-align: left;
+            }
+        }
+    }
+    &-form{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 22px;
+        label{
+            display: flex;
+            flex-direction: column;
+            font-size: 18px;
+            margin: 5px 0 27px 0;
+            padding: 5px 8px;
+            color: @color-olive-green;
+            font-weight: 400;
+            font-family: "Lato";
+            input, textarea, select{
+                border: 1px solid color(@color-silver);
+                border-radius: 5px;
+                color: @color-darker-grey;
+                font-size: 16px;
+                font-weight: 300;
+                padding: 5px 8px;
+                margin-top: 7px;
+            }
+        }
+        &-purchase{
+            width: 200px;
+            border: 0;
+            background: @color-olive-green;
+            padding: 11px 30px;
+            font-size: 14px;
+            font-family: "Lato";
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+            display: inline-block;
+            font-weight: 400;
+            letter-spacing: .5px;
+            margin: 0 auto;
+            text-transform: uppercase;
+            @media only screen and (min-width: @desktop){
+                margin: 0 0 0 5px;
+            }
+        }
+        
+
+        @media only screen and (min-width: @desktop){
+            vertical-align: top;
+            width: 33.33%;
+        }
+    }
+}

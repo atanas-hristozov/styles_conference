@@ -1,0 +1,99 @@
+@import 'var.less';
+.about-us{
+    text-align: center;
+    background-image: url(https://mobirise.com/html-templates/ecommerce/assets/images/izzie-r-418251-1920x1920.jpg);
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+    color: white;
+    padding: 90px 0;
+    @media only screen and (min-width: @mobile){
+        text-align: left;;
+    }
+
+    
+
+    &-wrapper{
+        @media only screen and (min-width: @mobile){
+            display: flex;
+            max-width: 1200px;
+            width: 90%;
+            margin: 0 auto;
+        }
+    }
+
+    &-intro{
+        @media only screen and (min-width: @mobile){
+            width: 50%;
+        }
+        h3{
+            font-size: 26px;
+            margin-top: 15px;
+        }
+        h4{
+            margin-bottom: 0;
+        }
+        h4, h3{
+            font-weight: normal;
+        }
+        p{
+            max-width: 90%;
+            margin: 0 auto;
+            line-height: 25px;
+            @media only screen and (min-width: @mobile){
+                max-width: 100%;
+            }
+        }
+        a{
+            display: inline-block;
+            margin-top: 40px;
+        }
+    }
+    &-item{
+        margin-top: 40px;
+        @media only screen and (min-width: @mobile){
+            width: 50%;
+            padding-right: 20px;
+        }
+        &-title{
+            position: relative;
+            
+            span{
+                color: @color-silver;
+                font-size: 64px;
+                font-weight: bold;
+            }
+            h4{
+                text-transform: uppercase;
+                position: absolute;
+                margin: 0;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                @media only screen and (min-width: @mobile){
+                    left: 0;
+                    transform: translate(0,-50%);
+                }
+            }
+        }
+        p{
+            max-width: 90%;
+            margin: 0 auto 10px auto;
+            line-height: 25px;
+            @media only screen and (min-width: @mobile){
+                max-width: 100%;
+            }
+        }
+        a{
+            color: @color-pink;
+        }
+    }
+    &-articles{
+        @media only screen and (min-width: @mobile){
+            display: flex;
+            flex-wrap: wrap;
+            order: -1;
+            width: 50%;
+        }
+    }
+}

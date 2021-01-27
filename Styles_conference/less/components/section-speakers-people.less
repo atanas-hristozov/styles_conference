@@ -1,0 +1,90 @@
+@import 'var.less';
+
+.speakers-people{
+    margin: 20px;
+    @media only screen and (min-width: @mobile){
+        max-width: 960px;
+        margin: 20px auto;
+    }
+    &-individuals{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 100px;
+        @media only screen and (min-width: @mobile){
+            flex-direction: row;
+        }
+        a{
+                font-size: 21px;
+                line-height: 33px;
+                color: @color-olive-green;
+                font-family: "Lato";
+                font-weight: 300;
+        }
+        &-info{  
+            h3{
+                font-size: 24px;
+                line-height: 44px;
+                color: @color-olive-green;
+                font-family: "Lato";
+                font-weight: 500;
+            }
+            h4{
+                color: @color-silver;
+                font-size: 14px;
+                font-weight: 400;
+                text-transform: uppercase;
+                font-family: "Lato";
+            }
+            p{
+                font-size: 21px;
+                line-height: 33px;
+                margin-bottom: 22px;
+                color: #888;
+                font-family: "Lato";
+                font-weight: 300;
+            }
+            @media only screen and (min-width: @mobile){
+                text-align: left;
+                width: 70%;
+                padding-right: 50px;
+            }
+        }
+        &-contacts{
+            display: flex;
+            flex-direction: column;
+            margin-top: 30px;
+            order: -1;
+            @media only screen and (min-width: @mobile){
+                order: 1;
+            }
+            img{
+                margin: 0 auto;
+                width: 200px;
+                height: auto;
+                border-radius: 50%;
+                @media only screen and (min-width: @mobile){
+                    z-index: 2;
+                }
+                
+            }
+            
+            ul{
+                list-style: none;
+                padding: 0;
+                text-align: center;
+                @media only screen and (min-width: @mobile){
+                    border: @color-silver solid 1px;
+                    border-radius: 5px;
+                    margin-top: -100px;
+                    padding: 100px 40px 22px 40px;
+                    width: 240px;
+                    z-index: 1;
+                }
+            }
+            @media only screen and (min-width: @mobile){
+                margin: 0 auto;
+            }
+        }
+    }
+}

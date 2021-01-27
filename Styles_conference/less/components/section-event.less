@@ -1,0 +1,46 @@
+@import 'var.less';
+
+.event{
+    background-color: @color-dark-green;
+    &-header{
+        display: block;
+        text-align: center;
+        padding: 22px 80px 66px 80px;
+        @media only screen and (min-width: @desktop){
+            max-width: 960px;
+            margin: 0 auto;
+        }
+        &-heading{
+            color: @color-olive-green;
+            font-size: 36px;
+            font-family: "Lato";
+            font-weight: 300;
+            line-height: 44px;
+        }
+        p{
+            margin-bottom: 22px;
+            color: white;
+            font-size: 24px;
+            font-weight: 100;
+            font-family: "Lato";  
+        }
+        a{
+            display: inline-block;
+            border: 1px solid #fff;
+            padding: 10px 30px;
+            border-radius: 5px;
+            color: #fff;
+            cursor: pointer;
+            font-family: "Lato";
+            font-weight: 400;
+            letter-spacing: .5px;
+            margin: 0;
+            text-transform: uppercase;
+            text-decoration: none;    
+        }
+        a:hover{
+            background-color: white;
+            color: @color-dark-green;
+        }
+    }
+}

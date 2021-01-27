@@ -1,0 +1,50 @@
+@import 'var.less';
+.section-team-quotes{
+    background-image: url('https://img.youtube.com/vi/36YgDDJ7XSc/maxresdefault.jpg');
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 60px 15px;
+    @media only screen and (min-width: @mobile){
+        text-align: left;
+        padding: 30px;
+        background-position: center bottom;
+    }
+
+    &-title{
+        font-size: 26px;
+        font-weight: normal;
+        margin-top: 15px;
+        margin-bottom: 40px;
+    }
+    &-desc{
+        margin-bottom: 0;
+    }
+    &-wrapper{
+        @media only screen and (min-width: @mobile){
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+    &-item{
+        margin-bottom: 40px;
+        @media only screen and (min-width: @mobile){
+            width: calc((100%/3) - 30px);
+            margin: 0 15px;
+        }
+        blockquote{
+            color: #ccc;
+            line-height: 25px;
+            @media only screen and (min-width: @mobile){
+                margin-left: 0;
+            }
+        }
+        h4{
+            margin-bottom: 0;
+        }
+        h5{
+            font-weight: normal;
+            margin-top: 15px;
+        }
+    }
+}
